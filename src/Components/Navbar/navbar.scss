@@ -1,10 +1,10 @@
 :root {
-  --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hsl(187, 85%, 43%);
+  --PrimaryColor: hsl(170, 95%, 30%);
+  --SecondaryColor: hsl(165, 81%, 44%);
   --gradientColor: linear-gradient(
     to right,
-    hsl(187, 85%, 43%),
-    hsl(199, 100%, 33%)
+    hsl(161, 85%, 43%),
+    hsl(154, 100%, 33%)
   );
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
@@ -109,4 +109,50 @@
       color: var(--SecondaryColor);
     }
   }
+}
+
+//Media Queries=====================================================
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1rem, 2rem;
+
+    .navBar {
+      .navLists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        .navItem {
+          .navLink {
+            color: var(--textColor);
+            padding: 0 0.45rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+
+            &:hover {
+              color: var(--PrimaryColor);
+            }
+          }
+        }
+
+        .btn {
+          margin-left: 1rem;
+          a {
+            color: var(--whiteColor);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and {
+  
 }
