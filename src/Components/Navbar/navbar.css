@@ -17,8 +17,7 @@
   }
   
   .header {
-    position: static;
-    display: flex;
+    position: fixed;    
     align-items: center;
     justify-content: space-between;
     background: var(--whiteColorDeam);

@@ -17,9 +17,9 @@
   }
   video {
     position: relative;
-    height: 13rem;
+    height: 15rem;
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 4rem 0 0 0;
     top: 0;
     bottom: 0;
     object-fit: cover;

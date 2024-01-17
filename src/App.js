@@ -6,6 +6,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Login from './Components/Login/login'
 import Home from './Components/Homepage/home'
 import Navbar from './Components/Navbar/navbar'
+import FillReport from './Components/Report/fillReport'
 const App = () => {
   return (
     <>
@@ -15,7 +16,8 @@ const App = () => {
       
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route path='/login' element={<Login/>}/> 
+          <Route path='/fillReport' element={<FillReport/>} />        
         </Routes>
         
     </BrowserRouter> 
