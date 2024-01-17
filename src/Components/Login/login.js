@@ -1,7 +1,7 @@
 import './login.css';
-import profile from "./../Assets/a.png";
-import email from "./../Assets/email.jpg";
-import pass from "./../Assets/pass.png";
+import profile from "../Assets/a.png";
+import email from "../Assets/email.jpg";
+import pass from "../Assets/pass.png";
 
 
 function Login() {
@@ -12,10 +12,7 @@ function Login() {
          <div className="imgs">
            <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
-
            </div>
-
-
          </div>
          <div>
            <h1>Login Page</h1>

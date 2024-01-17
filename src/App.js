@@ -1,17 +1,25 @@
 import React from 'react'
 import './app.css'
-import Navbar from './Components/Navbar/Navbar.jsx'
-import Home from './Components/Home/Home.jsx'
-import Main from './Components/Main/Main.jsx'
-import Footer from './Components/Footer/Footer.jsx'
-import Login from './Components/Login/login.js'
+
+
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Login from './Components/Login/login'
+import Home from './Components/Homepage/home'
+import Navbar from './Components/Navbar/navbar'
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <Login/>
-    </>
     
+    <Navbar/>
+    <BrowserRouter>
+      
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login/>}/>
+        </Routes>
+        
+    </BrowserRouter> 
+    </>   
   )
 }
 

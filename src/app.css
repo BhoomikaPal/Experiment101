@@ -5,9 +5,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
 }
 
 /* Colors and styling */
+
 
 :root{
     --PrimaryColor: hsl(170, 100%, 33%);
