@@ -17,8 +17,10 @@
     
   }
 
-.home{
-    padding: 4.2rem 45% 2rem 50%;
-   
+.reportHome{
+    padding: 6rem 0 2rem;
+    align-items: center;
+    font-size: x-large;
+    color: var(--blackColor);
     
-}
+  }

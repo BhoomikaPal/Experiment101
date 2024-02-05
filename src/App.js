@@ -7,6 +7,7 @@ import Login from './Components/Login/login'
 import Home from './Components/Homepage/home'
 import Navbar from './Components/Navbar/navbar'
 import FillReport from './Components/Report/fillReport'
+import Report from './Components/Report/report'
 const App = () => {
   return (
     <>
@@ -17,7 +18,8 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/> 
-          <Route path='/fillReport' element={<FillReport/>} />        
+          <Route path='/fillReport' element={<FillReport/>} />
+          <Route path='/viewReport' element={<Report/>} />       
         </Routes>
         
     </BrowserRouter> 

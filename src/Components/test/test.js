@@ -29,52 +29,52 @@ function TestSlide(){
 const data = [
     {
       name: `John Morgan`,
-      img: `/John_Morgan.png`,
+      img: "./students/John_Morgan.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Ellie Anderson`,
-      img: `/Ellie_Anderson.png`,
+      img: "/students/Ellie_Anderson.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Nia Adebayo`,
-      img: `/Nia_Adebayo.png`,
+      img: "/students/Nia_Adebayo.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Rigo Louie`,
-      img: `/Rigo_Louie.png`,
+      img: "./students/Rigo_Louie.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Mia Williams`,
-      img: "/Mia_Williams.png",
+      img: "./students/Mia_Williams.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `John Morgan(copy)`,
-      img: `/John_Morgan(copy).png`,
+      img: "./students/John_Morgan(copy).png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Ellie Anderson(copy)`,
-      img: `/Ellie_Anderson.png`,
+      img: "./students/Ellie_Anderson.png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Nia Adebayo(copy)`,
-      img: `/Nia_Adebayo(copy).png`,
+      img: "./students/Nia_Adebayo(copy).png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Rigo Louie(copy)`,
-      img: `/Rigo_Louie(copy).png`,
+      img: "./students/Rigo_Louie(copy).png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
       name: `Mia Williams(copy)`,
-      img: `/Mia_Williams(copy).png`,
+      img: "./students/Mia_Williams(copy).png",
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     
