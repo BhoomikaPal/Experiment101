@@ -1,0 +1,167 @@
+import React from 'react'
+import './home.css'
+import video from '../Assets/video.mp4';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import {GrLocation} from 'react-icons/gr';
+import {HiFilter} from 'react-icons/hi';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import TestSlide from '../test/test';
+
+//Pictures
+import Rigo from '../test/students/Rigo_Louie.png';
+import Rigo1 from '../test/students/Rigo_Louie (copy).png';
+import Ellie from '../test/students/Ellie_Anderson.jpg';
+import Ellie1 from '../test/students/Ellie_Anderson (copy).png';
+import John from '../test/students/John_Morgan.png';
+import John1 from '../test/students/John_Morgan (copy).png';
+import Mia from '../test/students/Mia_Williams.png';
+import Mia1 from '../test/students/Mia_Williams (copy).png';
+import Nia from '../test/students/Nia_Adebayo.png';
+
+const Home = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+
+  };
+ 
+  return (
+    <div>
+    <video src={video} muted autoPlay loop type="video.mp4"></video>
+     <TestSlide/>
+    <div className="homeContent container"> 
+        <div className="textDiv">
+    <Carousel responsive={responsive}>
+      
+           <div className='Card'>
+
+            <img src ={Rigo} alt="Rigo"/>
+            <h2>Rigo</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Rigo1} alt="Rigo"/>
+            <h2>Rigo1</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Ellie} alt="Ellie"/>
+            <h2>Ellie</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Ellie1} alt="Ellie1"/>
+            <h2>Ellie1</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={John} alt="John"/>
+            <h2>John</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={John1} alt="John1"/>
+            <h2>John1</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Mia} alt="Mia"/>
+            <h2>Mia</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Mia1} alt="Mia1"/>
+            <h2>Mia1</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+            <div className='Card'>
+            <img src ={Nia} alt="Nia"/>
+            <h2>Nia</h2>
+            <p className='Acheived'>12500pcs</p>
+            <p>Some description about the person</p>
+            </div>
+
+
+         </Carousel>
+        </div>
+        </div>
+             
+   
+    <section className='home'>            
+      <div className="homeContent container"> 
+        <div className="textDiv">
+          <h1 data-aos="fade-up"
+          className="homeTitle">
+            Best Performer
+          </h1>
+        </div>
+        <div data-aos="fade-up" className="cardDiv grid">
+        <div className="plantLocationInput">
+        <label htmlFor="city">Select the plant location</label>
+        </div>
+        <div className="input flex">
+          <input type="text" placeholder='Enter name here...'/>
+          <GrLocation className="icon"/>
+        </div>
+
+        <div className="dateInput"></div>
+          <label htmlFor="date">Search your date:</label>
+            <div className="input flex">
+              <input type="date" placeholder='Enter name here...'/>
+            </div>
+
+          <div className="searchOptions flex">
+            <HiFilter className="icon"/>
+            <span>MORE PERFORMER</span>
+        </div>
+        </div>
+
+        <div data-aos="fade-up" className="homeFooterIcons flex">
+          <div className="rightIcons">
+
+          </div>
+          <div className="leftIcons">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  )
+}
+
+export default Home;
