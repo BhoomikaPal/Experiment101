@@ -17,7 +17,7 @@ function Login() {
          <div>
            <h1>Login Page</h1>
            <div>
-            <img src={email} alt="email" className="email"/>
+             <img src={email} alt="email" className="email"/>
              <input type="text" placeholder="user name" className="name"/>
            </div>
            <div className="second-input">
