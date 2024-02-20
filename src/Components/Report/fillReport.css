@@ -24,3 +24,7 @@
     color: var(--blackColor);
     
   }
+
+  .MuiTableCell-root {
+    height: 30px; /* Adjust the height as needed */
+  }

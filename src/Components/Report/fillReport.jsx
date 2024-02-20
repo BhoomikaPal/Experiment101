@@ -62,8 +62,8 @@ export default function FillReport() {
                 <TableCell align="left">{row.carbs}</TableCell>
                 <TableCell align="left">{row.protein}</TableCell>
                 <TableCell align="left">{row.wt}</TableCell>
-                <TableCell align="left">{<TextField id="standard-basic" variant="standard" />}</TableCell>
-                <TableCell align="left">{<TextField id="outlined-basic" variant="outlined" />}</TableCell>
+                <TableCell align="left" style={{ width: "100px", height: "25px" }}>{<TextField id="standard-basic" variant="standard" />}</TableCell>
+                <TableCell align="left" style={{ width: "100px", height: "25px" }}>{<TextField id="outlined-basic" variant="outlined" />}</TableCell>
 
               </TableRow>
             ))}

@@ -87,13 +87,28 @@ function TestSlide(){
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     draggable: true,
     autoplaySpeed: 500,
-    
-
   };
+
+  function updateSettings() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 670) {
+        settings.slidesToShow = 2;
+    } else if (screenWidth < 846) {
+        settings.slidesToShow = 3;
+    } else {
+        settings.slidesToShow = 4;
+    }
+}
+
+// Call updateSettings initially to set initial value based on screen width
+updateSettings();
+
+// Listen for window resize event to update settings dynamically
+window.addEventListener('resize', updateSettings);
 
 export default TestSlide;
