@@ -165,3 +165,183 @@ const Home = () => {
 }
 
 export default Home;
+
+/*---------------------------------------------Home.css-------------------------------------------------------------------*/
+
+
+:root {
+  --PrimaryColor: hsl(170, 64%, 41%);
+  --SecondaryColor: hsl(166, 94%, 34%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(161, 85%, 43%),
+    hsl(154, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+video {
+  position: relative;
+  height: 15rem;
+  width: 100%;
+  padding: 4rem 0 0 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.Card {
+  
+    width: 100%;
+    height: max-content;
+    padding: 2rem 1.5rem 3rem;
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: var(--whiteColor);
+    z-index: 100;
+
+  .textDiv {
+    padding: 2rem 0;
+
+    .smallText {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .homeTitle {
+      position: absolute;
+      font-size: 1.8rem;
+    }
+  }
+}
+.home {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+  .homeContent {
+    width: 100%;
+    height: max-content;
+    padding: 2rem 1.5rem 3rem;
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: var(--whiteColor);
+    z-index: 100;
+  }
+
+  .textDiv {
+    padding: 2rem 0;
+
+    .smallText {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .homeTitle {
+      position: absolute;
+      font-size: 1.8rem;
+    }
+  }
+
+  .cardDiv {
+  position: absolute;
+  height: 15rem;
+  width: 100%;
+  padding: 0 0 0 0;
+  top: 40px;
+  bottom: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  background: var(--PrimaryColor);
+
+    label {
+      display: block;
+      color: var(--textColor);
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .label total {
+      justify-content: space-between;
+      align-items: center;
+
+      .total {
+        color: var(--textColor);
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .input {
+      height: 40px;
+      padding: 0 1rem;
+      background: var(--inputColor);
+      border-radius: 3rem;
+
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 13px;
+        font-weight: 500;
+        &::placeholder {
+          font-size: 13px;
+        }
+      }
+
+      .icon {
+        font-size: 18px;
+        color: var(--PrimaryColor) !important;
+        margin-left: 10px;
+      }
+
+      .input[type="range"] {
+        background: var(--PrimaryColor);
+      }
+    }
+
+    .searchOptions {
+      position: absolute;
+      background: var(--gradientColor);
+      width: max-content;
+      bottom: -0.7rem;
+      column-gap: 0.8rem;
+      padding: 5px 1rem;
+      border-radius: 3rem;
+      left: 50%;
+      transform: translate(-50%);
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--PrimaryColor);
+      }
+
+      .icon {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}
