@@ -1,3 +1,5 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 /* Reset default browser styles */
 * {
   margin: 0;
@@ -53,6 +55,15 @@ html, body {
 /* Container for input fields */
 .input-container {
   margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
 /* Input fields */
